@@ -1,0 +1,53 @@
+.study-session {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+  
+  .study-session h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4a90e2;
+  }
+  
+  .study-session p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+  }
+  
+  .rest-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffdf5f;
+    color: #333;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rest-btn:hover {
+    background-color: #ffd633;
+  }
+  
+  .end-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f55f5f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .end-btn:hover {
+    background-color: #e04444;
+  }
+  

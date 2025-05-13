@@ -1,0 +1,48 @@
+
+.dashboard-layout {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+.left-panel {
+  flex: 1;
+  max-width: 300px;
+  background-color: #3f5ca8;
+  color: white;
+  padding: 24px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.focus-info-box {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.study-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.study-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.right-panel {
+  flex: 2;
+}
+
+.focus-score {
+  font-size: 12px;
+  margin-top: 3px;
+  color: #1976d2;
+}
