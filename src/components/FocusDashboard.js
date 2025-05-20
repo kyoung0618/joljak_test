@@ -56,7 +56,7 @@ function FocusDashboard() {
         </div>
         <button
           className="study-btn"
-          onClick={() => navigate('/study')}
+          onClick={() => navigate('/study-start')}
         >
           공부 시작
         </button>

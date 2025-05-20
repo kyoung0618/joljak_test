@@ -4,6 +4,8 @@ import FocusDashboard from '../components/FocusDashboard';
 
 function DashboardPage() {
   return <FocusDashboard />;
+  
 }
+
 
 export default DashboardPage;

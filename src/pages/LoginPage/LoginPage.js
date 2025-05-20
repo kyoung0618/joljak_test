@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
 
-const SERVER = 'http://13.236.148.165:8000';
+const SERVER = 'http://52.64.14.111:8000';
 
 function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -15,6 +15,7 @@ function LoginPage() {
   };
 
   const handleSubmit = async () => {
+    console.log('폼 내용 확인:', form);
     const url = isLogin ? `${SERVER}/users/login/` : `${SERVER}/users/register/`;
 
     try {
@@ -24,10 +25,12 @@ function LoginPage() {
         body: JSON.stringify(form),
       });
       const data = await res.json();
+      console.log('응답 상태:', res.status);
+       console.log('응답 본문:', data);
       if (res.ok) {
         const { token, user } = data;
         localStorage.setItem('token', token);
-        localStorage.setItem('username', user.username);
+        localStorage.setItem('username', form.username); // 백엔드 응답에 user 미포함 → form.username 사용
         navigate('/dashboard');
       } else {
         alert(data.error);

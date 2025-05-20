@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const SERVER = 'http://13.236.148.165:8000'; 
+const SERVER = 'http://52.64.14.111:8000'; 
 
 function RegisterPage() {
   const [form, setForm] = useState({ username: '', email: '', password: '' });
